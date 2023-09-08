@@ -4,7 +4,6 @@ import { httpBatchLink } from "@trpc/client";
 import React, { useState } from "react";
 import { trpc } from "./client";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-
 export default function Provider({ children }: { children: React.ReactNode }) {
 	const [queryClient] = useState(() => new QueryClient({}));
 	const [trpcClient] = useState(() =>
@@ -24,4 +23,6 @@ export default function Provider({ children }: { children: React.ReactNode }) {
 			</QueryClientProvider>
 		</trpc.Provider>
 	);
+
+
 }
