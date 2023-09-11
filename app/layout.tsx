@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Provider from './_trpc/Provider';
+import Nav, { NavigationMenuDemo } from '@/src/components/Nav';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -42,7 +43,10 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={inter.className}>
 				<Provider>
-					{children}
+					<div className="mx-auto  text-center">
+						<NavigationMenuDemo />
+						{children}
+					</div>
 				</Provider>
 			</body>
 		</html>
