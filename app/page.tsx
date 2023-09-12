@@ -8,7 +8,7 @@ export default function Home() {
 	return (
 		<div>
 			{JSON.stringify(getTodos.data)}
-			<p>This is just template page.. did you?</p>
+			<p>This is just template page.. di you?</p>
 			<Button variant="outline">Button</Button>
 			<SlideShow ></SlideShow>
 		</div>

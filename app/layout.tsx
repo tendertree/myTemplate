@@ -43,7 +43,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={inter.className}>
 				<Provider>
-					<div className="mx-auto  text-center">
+					<div className="text-center">
 						<NavigationMenuDemo />
 						{children}
 					</div>
